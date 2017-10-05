@@ -118,6 +118,27 @@ function getI18n(key, lang) {
 			, station: 'Stations'
 			, windrose: 'Wind roos'
 		}
+		, it: {
+			  maps: 'Mappe'
+			, layers: 'Livelli'
+			, current: 'Meteo attuale'
+
+			, clouds: 'Nuvoloso'
+			, cloudscls: 'Nuvoloso (classic)'
+			, precipitation: 'Precipitazione'
+			, precipitationcls: 'Precipitazione (classic)'
+			, rain: 'Pioggia'
+			, raincls: 'Pioggia (classic)'
+			, snow: 'Neve'
+			, temp: 'Temperatura'
+			, windspeed: 'Vento, velocità'
+			, pressure: 'Pressione'
+			, presscont: 'Isobara'
+
+			, city: 'Città'
+			, station: 'Stazione'
+			, windrose: 'Rosa dei venti'
+		}
 	};
 
 	if (typeof i18n[lang] != 'undefined'
@@ -158,7 +179,7 @@ function getLocalLanguage() {
 	}
 
 	// Use only supported languages, defaults to 'en'
-	if (lang != 'en' && lang != 'de' && lang != 'fr' && lang != 'ru' && lang != 'nl' && lang != 'ca' && lang != 'es' && lang != 'pt_br') {
+	if (lang != 'en' && lang != 'de' && lang != 'fr' && lang != 'ru' && lang != 'nl' && lang != 'ca' && lang != 'es' && lang != 'pt_br' && lang != 'it') {
 		lang = 'en';
 	}
 	return lang;
